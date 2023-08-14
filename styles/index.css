@@ -61,6 +61,7 @@ img {
   align-items: center;
   flex-wrap: wrap;
   padding: 1rem;
+  justify-content: center;
 }
 
 .menu ul {
@@ -68,6 +69,7 @@ img {
   flex-wrap: wrap;
   gap: 1.2rem;
   font-size: 1.2rem;
+  justify-content: center;
 }
 .menuNave a {
   display: block;
@@ -87,6 +89,7 @@ img {
 .logo {
   font-size: 2.5rem;
   font-weight: bold;
+  flex: 1;
 }
 .about,
 .products,
@@ -404,6 +407,15 @@ img {
     flex-basis: 300px;
   }
 }
+@media (max-width: 586px) {
+  .logo {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  .superInfo {
+    justify-content: center;
+  }
+}
 
 @media (max-width: 575px) {
   .price .itemPrice:nth-child(2) {
@@ -411,5 +423,11 @@ img {
   }
   .price .itemPrice:nth-child(3) {
     order: -2;
+  }
+}
+
+@media (max-width: 384px) {
+  .titleIntroduction {
+    font-size: 2.5rem;
   }
 }
